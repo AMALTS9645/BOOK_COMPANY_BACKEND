@@ -10,11 +10,11 @@ app.use(express.json());
 //Import mongoose module
 var mongoose = require('mongoose');
 //Set up default mongoose connection
-var mongoDB = 'mongodb+srv://<uname password>@cluster0.x4j0e.mongodb.net/book-company?retryWrites=true&w=majority';
+var mongoDB = 'mongodb+srv://<uname:password>@cluster0.x4j0e.mongodb.net/book-company?retryWrites=true&w=majority';
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true}).then(()=>console.log("CONNECTION ESTABLISHED"));
 
 // const { MongoClient } = require('mongodb');
-// const uri = "mongodb+srv://amal_ts:nPkRJr6kh6Gax9vV@cluster0.x4j0e.mongodb.net/book-company?retryWrites=true&w=majority";
+// const uri = "mongodb+srv://<uname:password>@cluster0.x4j0e.mongodb.net/book-company?retryWrites=true&w=majority";
 // const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 // client.connect(err => {
 //   const bcollection = client.db("book-company").collection("books").findOne({ISBN: "1234Three"});
