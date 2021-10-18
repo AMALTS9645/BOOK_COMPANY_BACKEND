@@ -29,7 +29,7 @@ mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true}).the
 // }
 
 // async function main() {
-//     const uri = "mongodb+srv://amal_ts:nPkRJr6kh6Gax9vV@cluster0.x4j0e.mongodb.net/book-company?retryWrites=true&w=majority";
+//     const uri = "mongodb+srv://<uname:password>@cluster0.x4j0e.mongodb.net/book-company?retryWrites=true&w=majority";
 //     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 //     try{
 //         await client.connect();
